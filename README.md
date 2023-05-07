@@ -1,1 +1,1 @@
-# ta_training-java
+Practical tasks from Automated Testing Foundations with Java (Epam course)
