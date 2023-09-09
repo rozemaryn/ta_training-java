@@ -1,0 +1,25 @@
+package com.epam.rd.autotasks.matrices;
+import java.util.Arrays;
+
+public class TransposeMatrix {
+    public static int[][] transpose(int[][] matrix) {
+        int[][] transposedMatrix = new int[matrix[0].length][matrix.length];
+
+        for (int i = 0; i < transposedMatrix.length; i++) {
+            for (int j = 0; j < transposedMatrix[i].length; j++) {
+                transposedMatrix[i][j] = matrix[j][i];
+            }
+        }
+        return transposedMatrix;
+    }
+
+    public static void main(String[] args) {
+        int[][] matrix = {
+                {1, 2},
+                {7, -13} };
+
+        int[][] result = transpose(matrix);
+        System.out.println(Arrays.deepToString(result).replace("],", "]\n"));
+    }
+
+}

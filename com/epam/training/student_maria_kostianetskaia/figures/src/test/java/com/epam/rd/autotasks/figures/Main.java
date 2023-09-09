@@ -1,0 +1,24 @@
+package com.epam.rd.autotasks.figures;
+
+public class Main {
+    public static void main(String[] args) {
+        double area;
+
+        area = new Triangle(new Point(0, 0), new Point(3, 0), new Point(0, 4)).area();
+        System.out.println(area);
+
+        area = new Quadrilateral(new Point(1, 0), new Point(2, 1), new Point(1, 2), new Point(0, 1)).area();
+        System.out.println(area);
+
+        area = new Circle(new Point(1, 1), 3).area();
+        System.out.println(area);
+
+        Figure triangle = new Triangle(new Point(0, 0), new Point(3, 0), new Point(0, 4));
+        System.out.println(triangle.pointsToString());
+
+        Figure circle = new Circle(new Point(1, 1), 3);
+        System.out.println(circle.pointsToString());
+
+
+    }
+}

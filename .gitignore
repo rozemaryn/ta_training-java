@@ -1,0 +1,5 @@
+/src/main/java/com/epam/training/student_maria_kostianetskaia/.idea/
+*.class
+*.iml
+target/
+.idea/
